@@ -1,4 +1,4 @@
-# Radio Coda Stream Utilities
+# Radio Coda Stream
 The following repository contains the Docker image for ffmpeg which runs the Radio Coda Stream.
 
 This script was modified from [@ohld](https://github.com/ohld)'s article [How to create your 24/7 YouTube online radio](https://okhlopkov.medium.com/how-to-create-your-24-7-youtube-online-radio-ca9e6834c192)
