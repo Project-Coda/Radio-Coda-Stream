@@ -1,0 +1,19 @@
+services:
+  stream:
+    restart: always
+    build: .
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+      - "5410:5410" # required for authnentication
+    volumes:
+      - ./data:/data
+    env_file:
+      - ./.env
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
