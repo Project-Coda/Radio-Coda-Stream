@@ -10,3 +10,9 @@ updates:
     schedule:
       # Check for updates to GitHub Actions every weekday
       interval: "daily"
+    ignore:
+      - dependency-name: "nvidia/cuda"
+        update-types: [
+          "version-update:semver-major",
+          "version-update:semver-minor"
+        ]
