@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.7.1-base-ubuntu20.04
+FROM nvidia/cuda:12.0.1-base-ubuntu20.04
 COPY rootfs /
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
